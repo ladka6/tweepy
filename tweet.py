@@ -35,7 +35,7 @@ class Tweet:
                 
         return tweets
     
-    def gezinme(self,cümle,kelimeler):
+    def search(self,cümle,kelimeler):
         emptyList = []
         cümleYeni = cümle.split(' ')
         emptyList.extend(cümleYeni)
@@ -52,9 +52,9 @@ class Tweet:
         olumsuzYazı = []
         tweets = self.takeTweets_user(userName,items)
         for cümleler in tweets:
-            if t1.gezinme(cümleler,olumluList) == True:
+            if t1.seacrh(cümleler,olumluList) == True:
                 olumluYazı.append(cümleler+'\n')
-            elif t1.gezinme(cümleler,olumsuzList) == True:
+            elif t1.search(cümleler,olumsuzList) == True:
                 olumsuzYazı.append(cümleler+'\n')
         with open("olumlu3.txt","w",encoding="utf-8") as file1:
             for olumlu in olumluYazı:
