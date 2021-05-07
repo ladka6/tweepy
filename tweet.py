@@ -11,10 +11,10 @@ import tweepy
 class Tweet:
     
     def __init__(self,
-                 consumerkey = '4W9FJLSbFxgvasSSY0Vyz9IXF',
-                 consumersecret='9ncAtYMS0IffTJYTbzMRpoCQWK7acc6q7bAsA3adNwRqmX0a56',
-                 accestoken='1005545810485022720-X5ZawfK0JHl7lifdGVULSVygZDPkyu',
-                 accestokenSecret='iTyp6yjNu4dCDbOxvLSoAs7YiyKLCawOCYt9UfminRkgf',
+                 consumerkey = '****',
+                 consumersecret='****',
+                 accestoken='***',
+                 accestokenSecret='***',
                  ):
         
         self.consumerkey = consumerkey
